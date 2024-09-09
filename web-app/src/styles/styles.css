@@ -1,0 +1,11 @@
+/* Main */
+@import url('../styles/main.css');
+
+/* callcenter */
+@import url('../styles/callcenter.css');
+
+/* Responsive */
+@import url('../styles/responsive.css');
+
+/* contact-section */
+@import url('../styles/contact-section.css');

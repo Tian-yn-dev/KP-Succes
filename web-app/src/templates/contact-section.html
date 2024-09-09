@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">BITC</div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <a href="./index.html">Home</a>
+                <a href="./contact-section.html">Complaints</a>
+                <a href="#">Live Chat</a>
+                <a href="./callcenter.html">Call Center</a>
+            </nav>
+        </div>
+
+        <div class="header-text">
+            <div class="text-content">
+                <h3>Feedback dan Keluhan</h3>
+                <h1>Baros Information Technology Creative</h1>
+                <p>Selamat datang di halaman Feedback dan Keluhan Baros Information Technology Creative. Kami menghargai
+                    masukan Anda untuk meningkatkan layanan kami. Silakan sampaikan feedback, saran, atau keluhan Anda.
+                </p>
+                <a href="#main-content">Learn More</a>
+            </div>
+        </div>
+    </header>
+    <main id="main-content">
+        <div class="complaint-section">
+            <form id="complaintForm" action="">
+                <h2>Complaints</h2>
+                <div>
+                    <span>
+                        <label for="name">Name</label><br />
+                        <input id="name" type="text" placeholder="Full Name" autocomplete="name" required>
+                        <span id="nameError" class="error"></span>
+                    </span>
+                    <span>
+                        <label for="tenant">Tenant</label><br />
+                        <input id="tenant" type="text" placeholder="Tenant Name" autocomplete="organization">
+                        <span id="tenantError" class="error"></span>
+                    </span>
+                    <span>
+                        <label for="phone">Phone Number</label><br />
+                        <input id="phone" type="tel" placeholder="Phone Number" autocomplete="tel" required>
+                        <span id="phoneError" class="error"></span>
+                    </span>
+                </div>
+                <label for="message">Your Complaint</label><br />
+                <textarea id="message" rows="10" placeholder="Your Complaint" autocomplete="off" required></textarea>
+                <span id="messageError" class="error"></span>
+                <button id="submitbutton" type="button" disabled>Submit</button>
+        </div>
+    </main>
+    <footer>
+        <footer-bar></footer-bar>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
